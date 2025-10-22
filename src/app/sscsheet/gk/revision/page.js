@@ -8,7 +8,7 @@ export async function generateMetadata() {
 
   try {
     const res = await fetch(`${apidatasheeturl}/chapters`, {
-      next: { revalidate: 3600 }, // cache for 1 hour
+      next: { revalidate: 36000 }, // cache for 1 hour
     });
     if (res.ok) {
       chapters = await res.json();

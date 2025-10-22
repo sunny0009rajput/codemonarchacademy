@@ -11,7 +11,7 @@ export async function generateMetadata({ params, searchParams }) {
   try {
     // same logic as in ProblemPage
     const res = await fetch(`${apidatasheeturl}/${chapter.replace(/\s/g, "_")}`, {
-      next: { revalidate: 120 }, // cache API for 2 min
+      next: { revalidate: 36000 }, // cache API for 2 min
     });
     const data = await res.json();
 
