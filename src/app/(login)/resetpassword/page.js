@@ -4,7 +4,7 @@ import axios from "axios";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 
-export default function page() {
+export default function Page() {
   const [passwords, setPasswords] = useState({
     newPassword: "",
     confirmPassword: "",

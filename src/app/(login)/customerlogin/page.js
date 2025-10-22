@@ -5,7 +5,7 @@ import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-export default function page() {
+export default function Page() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",

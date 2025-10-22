@@ -4,7 +4,7 @@ import Link from "next/link";
 import axios from "axios";
 import { Mail, CheckCircle2, ArrowLeft } from "lucide-react";
 
-export default function page() {
+export default function Page() {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
